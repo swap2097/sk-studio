@@ -1,26 +1,121 @@
 @import "tailwindcss";
 
+/* ========================================
+  SK STUDIO DESIGN TOKENS
+======================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0A0A0A;
+  --surface: #141414;
+  --surface-soft: #1A1A1A;
+
+  --text: #F8F8F8;
+  --muted: #A1A1AA;
+  --muted-soft: #71717A;
+
+  --gold: #D4AF37;
+  --gold-light: #E2C15A;
+
+  --border: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ========================================
+  BASE
+======================================== */
+
+html {
+  scroll-behavior: auto;
+  background: var(--background);
 }
 
 body {
+  margin: 0;
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+
+/* ========================================
+    TYPOGRAPHY
+======================================== */
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+
+/* ========================================
+    SECTIONS
+======================================== */
+
+section {
+  scroll-margin-top: 100px;
+}
+
+
+/* ========================================
+  SELECTION
+======================================== */
+
+::selection {
+  background: var(--gold);
+  color: var(--background);
+}
+
+
+/* ========================================
+  LINKS & BUTTONS
+======================================== */
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ========================================
+    SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+
+/* ========================================
+    REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
