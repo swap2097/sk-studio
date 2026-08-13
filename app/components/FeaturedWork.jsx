@@ -3,6 +3,7 @@ import ProjectMockup from "@/ui/ProjectMockup";
 
 import Reveal from "../animations/Reveal";
 import LunaParallax from "../animations/LunaParallax";
+import Link from "next/link";
 
 export default function FeaturedWork() {
     const featuredProject = projects[0];
@@ -188,26 +189,16 @@ export default function FeaturedWork() {
                 {/* Explore */}
                 <div className="mt-7 border-t border-white/10 pt-5">
 
-                <button
-                    type="button"
-                    className="
-                    group/button
-                    flex
-                    items-center
-                    gap-3
-                    text-sm
-                    text-white
-                    transition-colors
-                    duration-300
-                    hover:text-[#D4AF37]
-                    "
+                <Link
+                href={`/work/${featuredProject.slug}`}
+                className="group/button flex items-center gap-3 text-sm text-white transition-colors duration-300 hover:text-[#D4AF37]"
                 >
-                    View case study
+                View case study
 
                     <span className="transition-transform duration-300 group-hover/button:translate-x-1">
-                    ↗
+                        ↗
                     </span>
-                </button>
+                </Link>
 
                 </div>
 
@@ -357,26 +348,16 @@ export default function FeaturedWork() {
                     {/* Explore */}
                     <div className="mt-6">
 
-                        <button
-                        type="button"
-                        className="
-                            group/button
-                            flex
-                            items-center
-                            gap-3
-                            text-sm
-                            text-white
-                            transition-colors
-                            duration-300
-                            hover:text-[#D4AF37]
-                        "
+                        <Link
+                        href={`/work/${project.slug}`}
+                        className="group/button flex items-center gap-3 text-sm text-white transition-colors duration-300 hover:text-[#D4AF37]"
                         >
                         View case study
 
-                        <span className="transition-transform duration-300 group-hover/button:translate-x-1">
-                            ↗
-                        </span>
-                        </button>
+                            <span className="transition-transform duration-300 group-hover/button:translate-x-1">
+                                ↗
+                            </span>
+                        </Link>
 
                     </div>
 
