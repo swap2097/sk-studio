@@ -82,7 +82,7 @@ const contactSchema = z.object({
         }
 
         const { data, error } = await resend.emails.send({
-        from: "SK Studio <onboarding@resend.dev>",
+        from: "SK Studio <hello@skstudio20.in>",
         to: [process.env.CONTACT_EMAIL],
         replyTo: email,
         subject: `New project inquiry from ${name}`,
