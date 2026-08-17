@@ -14,6 +14,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://skstudio20.in"),
+
   title: {
     default: "SK Studio | Premium Websites for Creators",
     template: "%s | SK Studio",
@@ -23,7 +25,7 @@ export const metadata = {
     "SK Studio creates premium, high-performance websites for creators and personal brands.",
 
   keywords: [
-    "creator website",
+    "creator websites",
     "premium creator websites",
     "creator web design",
     "personal brand website",
@@ -38,12 +40,10 @@ export const metadata = {
 
   openGraph: {
     title: "SK Studio | Premium Websites for Creators",
-
     description:
       "Premium digital experiences for creators and personal brands.",
-
+    url: "https://skstudio20.in",
     siteName: "SK Studio",
-
     type: "website",
   },
 };

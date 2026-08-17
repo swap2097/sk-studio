@@ -5,6 +5,6 @@ export default function robots() {
         allow: "/",
         },
 
-        sitemap: "https://your-domain.com/sitemap.xml",
+        sitemap: "https://skstudio20.in/sitemap.xml",
     };
 }
