@@ -578,19 +578,35 @@ return (
         something memorable?
         </h2>
 
-        <Link
-        href="/#contact"
-        className="mt-10 inline-flex items-center gap-3 rounded-full px-7 py-4 text-sm font-medium transition-transform duration-300 hover:scale-105"
-        style={{
-            backgroundColor: project.accent,
-            color: project.theme === "light"
-            ? "#FFFFFF"
-            : "#0A0A0A",
-        }}
-        >
-        Let&apos;s Talk
-        <span>↗</span>
-        </Link>
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 rounded-full px-7 py-4 text-sm font-medium transition-transform duration-300 hover:scale-105"
+                style={{
+                backgroundColor: project.accent,
+                color: project.theme === "light"
+                    ? "#FFFFFF"
+                    : "#0A0A0A",
+                }}
+            >
+                Visit live website
+                <span>↗</span>
+            </a>
+
+            <Link
+                href="/#contact"
+                className="inline-flex items-center gap-3 rounded-full border px-7 py-4 text-sm font-medium transition-transform duration-300 hover:scale-105"
+                style={{
+                borderColor: `${project.text}25`,
+                color: project.text,
+                }}
+            >
+                Let&apos;s Talk
+                <span>↗</span>
+            </Link>
+            </div>
 
     </section>
 

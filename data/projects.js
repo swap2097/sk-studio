@@ -7,7 +7,7 @@ export const projects = [
     category: "Creator Website",
     year: "2026",
     type: "Concept Project",
-    url: "luna-vale.com",
+    url: "https://luna-vale.vercel.app/",
 
     description:
     "A cinematic creator website designed to turn a social audience into a memorable, owned digital world.",
