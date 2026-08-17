@@ -1,16 +1,16 @@
-import { Inter, Cormorant_Garamond } from "next/font/google";
+import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "./components/SmoothScroll";
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-body",
 });
 
-const cormorant = Cormorant_Garamond({
+const ovo = Ovo({
   subsets: ["latin"],
+  weight: "400",
   variable: "--font-heading",
-  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -38,6 +38,8 @@ export const metadata = {
     },
   ],
 
+  creator: "SK Studio",
+
   openGraph: {
     title: "SK Studio | Premium Websites for Creators",
     description:
@@ -46,15 +48,26 @@ export const metadata = {
     siteName: "SK Studio",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "SK Studio | Premium Websites for Creators",
+    description:
+      "Premium digital experiences for creators and personal brands.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${cormorant.variable} antialiased`}
+        className={`${outfit.variable} ${ovo.variable} ${outfit.className} antialiased leading-8 overflow-x-hidden dark:bg-[#11001F] dark:text-white`}
       >
-        <SmoothScroll />
         {children}
       </body>
     </html>
