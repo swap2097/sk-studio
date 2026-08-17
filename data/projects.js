@@ -1,58 +1,60 @@
 export const projects = [
     {
-        number: "01",
-        slug: "luna-noir",
+    number: "01",
+    slug: "luna-vale",
 
-        title: "Luna Noir",
-        category: "Luxury Creator Experience",
-        year: "2026",
-        type: "Concept Project",
-        url: "luna-noir.com",
+    title: "Luna Vale",
+    category: "Creator Website",
+    year: "2026",
+    type: "Concept Project",
+    url: "luna-vale.com",
 
-        description:
-        "A cinematic personal platform designed to turn an existing audience into a premium owned digital experience.",
+    description:
+    "A cinematic creator website designed to turn a social audience into a memorable, owned digital world.",
 
-        services: [
-        "Strategy",
-        "Art Direction",
-        "UX / UI",
-        "Development",
-        ],
+    services: [
+    "Creative Direction",
+    "UX / UI",
+    "Development",
+    "Conversion Strategy",
+    ],
 
-        logo: "LUNA NOIR",
-        eyebrow: "Private · Personal · Unforgettable",
-        heading: "Own your presence.",
-        buttonText: "Enter",
+    logo: "LUNA VALE",
+    eyebrow: "A private world beyond the feed",
+    heading: "Own your world.",
+    buttonText: "Explore",
 
-        theme: "dark",
-        layout: "editorial",
+    theme: "dark",
+    layout: "editorial",
 
-        background: "#17130F",
-        text: "#F4EEE5",
-        muted: "#A69B8C",
-        accent: "#C9A96E",
+    background: "#0A0909",
+    text: "#F5F0E9",
+    muted: "#8F8880",
+    accent: "#C7B8A4",
 
-        caseStudy: {
-        intro:
-            "Luna Noir explores what happens when a creator stops treating their website as a link destination and starts treating it as a private digital world.",
+    caseStudy: {
+    intro:
+        "Luna Vale is a creator website concept built around the idea that a creator's digital presence should feel like a destination rather than another social profile.",
 
-        challenge:
-            "The challenge was to create an experience that felt significantly more premium than a typical creator landing page while keeping the journey toward private content simple and intentional.",
+    challenge:
+        "Creators often have strong audiences but limited control over how their identity, stories, collaborations and private content are presented. The challenge was to create a premium digital home that could connect all of those experiences without feeling like a conventional portfolio template.",
 
-        approach:
-            "We focused on cinematic typography, restrained motion, editorial composition and a clear hierarchy around discovery, trust and private access.",
+    approach:
+        "We combined cinematic photography, oversized serif typography, restrained motion and generous whitespace with a clear content hierarchy. The experience is structured around discovery, editorial storytelling, exclusive access and direct collaboration, with a dedicated journal, dynamic article pages and a working contact flow powered by Resend.",
 
-        result:
-            "The result is a dark, immersive platform designed to make the creator feel like a brand rather than another profile inside a social feed.",
+    result:
+        "The result is a complete, responsive creator platform that feels closer to a digital editorial world than a traditional landing page. It gives fans a deeper way to explore the creator, gives brands a clear route to collaborate, and gives the creator a branded space they can own.",
 
-        highlights: [
-            "Editorial art direction",
-            "Premium conversion journey",
-            "Mobile-first experience",
-            "Cinematic interaction design",
-        ],
-        },
+    highlights: [
+        "Cinematic editorial art direction",
+        "Creator-owned content architecture",
+        "Dynamic journal and article system",
+        "Exclusive-content conversion path",
+        "Working contact flow with Resend",
+        "Responsive, performance-focused Next.js build",
+    ],
     },
+},
 
     {
         number: "02",
