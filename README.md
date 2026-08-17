@@ -36,18 +36,20 @@ The website focuses on:
 
 ## Selected Work
 
-### 01 — Luna Noir
+### 01 — Luna Vale
 
-**Luxury Creator Experience**
+**Creator Website**
 
-A cinematic creator platform designed to turn an existing audience into a premium owned digital experience.
+A cinematic creator website designed to turn a social audience into a memorable, owned digital world.
 
 **Services**
 
-- Strategy
-- Art Direction
+- Creative Direction
 - UX / UI
 - Development
+- Conversion Strategy
+
+Luna Vale explores how creators can move beyond the limitations of a social profile and create a branded digital destination for storytelling, exclusive content and collaboration.
 
 ---
 
