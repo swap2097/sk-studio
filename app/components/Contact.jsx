@@ -45,13 +45,17 @@ export default function Contact() {
 
         if (!response.ok) {
             console.error("Contact API error:", {
-            status: response.status,
-            message: result.message,
-            errors: result.errors,
+                status: response.status,
+                result,
             });
 
+            console.error(
+                "Validation errors:",
+                JSON.stringify(result.errors, null, 2)
+            );
+
             throw new Error(
-            result.message || "Something went wrong."
+                result.message || "Something went wrong."
             );
         }
 
@@ -336,28 +340,18 @@ export default function Contact() {
                         </label>
 
                         <textarea
-                        id="message"
-                        name="message"
-                        rows={4}
-                        required
-                        maxLength={500}
-                        value={message}
-                        onChange={(event) =>
-                            setMessage(event.target.value)
-                        }
-                        placeholder="Tell us what you're building..."
-                        className="
-                            w-full
-                            resize-none
-                            bg-transparent
-                            text-base
-                            leading-7
-                            text-white
-                            outline-none
-                            placeholder:text-white/15
-                        "
+                            id="message"
+                            name="message"
+                            rows={4}
+                            required
+                            minLength={10}
+                            maxLength={500}
+                            value={message}
+                            onChange={(event) => setMessage(event.target.value)}
+                            placeholder="Tell us what you're building..."
+                            className="w-full resize-none bg-transparent text-base leading-7 text-white outline-none placeholder:text-white/15"
                         />
-
+                        
                         {/* Character counter */}
                         <span
                         className="

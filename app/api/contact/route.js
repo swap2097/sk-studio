@@ -129,15 +129,15 @@ const contactSchema = z.object({
         });
 
         if (error) {
-        console.error("Resend error:", error);
+            console.error("Resend error:", error);
 
-        return Response.json(
-            {
-            success: false,
-            message: "Email could not be sent.",
-            },
-            { status: 500 }
-        );
+            return Response.json(
+                {
+                    success: false,
+                    message: error.message || "Email could not be sent.",
+                },
+                { status: 500 }
+            );
         }
 
         console.log("Email sent:", data);
