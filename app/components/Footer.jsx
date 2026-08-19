@@ -244,7 +244,7 @@ const footerLinks = [
                 </a>
 
                 <a
-                href="mailto:hello@skstudio.com"
+                href="mailto:swapy2097@gmail.com"
                 className="
                     text-[10px]
                     uppercase

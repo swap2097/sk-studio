@@ -142,7 +142,7 @@ export default function Contact() {
                 <div className="mt-12 space-y-5">
 
                 <a
-                    href="mailto:hello@skstudio.com"
+                    href="mailto:swapy2097@gmail.com"
                     className="
                     group
                     flex

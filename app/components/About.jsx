@@ -53,7 +53,7 @@ export default function About() {
 
                     <div>
                     <p className="text-sm text-white">
-                        Swapnil Khewale
+                        Swapnil KK
                     </p>
 
                     <p className="mt-1 text-xs uppercase tracking-[0.2em] text-white/30">
